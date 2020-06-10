@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Loading Screen</title>
+        <!-- LOADING SCREEN CSS -->
+        <link rel="stylesheet" href="layout.css">
+    </head>
+
+    <body>
+        <!-- LOADING SCRIPT -->
+        <script type="text/javascript">
+            document.body.onload = function() {
+                var loadingScreen = document.querySelector(".loading-screen");
+
+                loadingScreen.style.opacity = 0;
+                setTimeout(function() {
+                    loadingScreen.style.width = 0; 
+                    loadingScreen.style.height = 0;
+                },1000);
+            }
+        </script>
+
+        <div class="content-wrapper">
+            <!-- CONTENT HERE -->
+        </div>
+        
+        <!-- LOADING SCREEN -->
+        <div class="loading-screen">
+            <div class="loading-icon"></div>
+        </div>
+    </body>
+</html>
